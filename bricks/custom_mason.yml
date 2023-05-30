@@ -1,0 +1,5 @@
+bricks:
+  new_app:
+    git:
+      url: https://github.com/orhanardaduman/flutter_bricks
+      path: bricks/new_app
