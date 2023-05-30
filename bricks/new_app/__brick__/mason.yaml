@@ -1,10 +1,10 @@
 bricks:
-  sub:
+  sub_widget:
     git:
       url: https://github.com/orhanardaduman/flutter_bricks
-      path: bricks/sub
-  parent:
+      path: bricks/sub_widget
+  parent_widget:
     git:
       url: https://github.com/orhanardaduman/flutter_bricks
-      path: bricks/parent
+      path: bricks/parent_widget
   
