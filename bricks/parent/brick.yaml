@@ -1,4 +1,4 @@
-name: app_component_with_routes
+name: parent
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
