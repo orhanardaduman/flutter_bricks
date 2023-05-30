@@ -1,0 +1,8 @@
+flutter pub add bloc
+flutter pub add flutter_bloc
+flutter pub add http
+flutter pub add html_unescape
+flutter pub add auto_size_text
+flutter pub add flutter_svg
+flutter pub add go_router
+
