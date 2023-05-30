@@ -2,14 +2,14 @@
 # Run "mason get" to install all registered bricks.
 # To learn more, visit https://docs.brickhub.dev.
 bricks:
-  app_component_with_routes:
+  sub:
     git:
       url: https://github.com/orhanardaduman/flutter_bricks
-      path: bricks/app_component_with_routes
-  app_item:
+      path: bricks/sub
+  parent:
     git:
       url: https://github.com/orhanardaduman/flutter_bricks
-      path: bricks/app_item
+      path: bricks/parent
   
   # Bricks can be imported via version constraint from a registry.
   # Uncomment the following line to import the "hello" brick from BrickHub.
