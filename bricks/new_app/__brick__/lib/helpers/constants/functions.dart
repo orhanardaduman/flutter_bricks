@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:valorehber/helpers/singleton/base_singelton.dart';
 import '../singleton/base_singelton.dart';
 
 class BaseFunctions with BaseSingleton {
