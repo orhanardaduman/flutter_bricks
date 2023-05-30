@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+// import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 import '../drawer/{{filename.snakeCase()}}_drawer.dart';
 import '../widgets/{{filename.snakeCase()}}_backgroud.dart';
@@ -45,6 +45,7 @@ class {{filename.pascalCase()}}ScaffoldState extends State<{{filename.pascalCase
           Scaffold(
             backgroundColor: Colors.transparent,
             drawer: const {{filename.pascalCase()}}Drawer(),
+            /*
             bottomNavigationBar: SalomonBottomBar(
               currentIndex: _getSelectedTabIndex(),
               selectedItemColor: Colors.white,
@@ -65,6 +66,7 @@ class {{filename.pascalCase()}}ScaffoldState extends State<{{filename.pascalCase
               
               ],
             ),
+            */
             body: widget.child,
           ),
         ],

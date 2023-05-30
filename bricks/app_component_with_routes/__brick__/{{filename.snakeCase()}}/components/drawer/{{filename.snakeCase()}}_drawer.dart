@@ -13,7 +13,7 @@ class {{filename.pascalCase()}}Drawer extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-            color: colors.{{filename.pascalCase()}}BackGround,
+           // color: colors.{{filename.pascalCase()}}BackGround,
             borderRadius: const BorderRadius.only(
                 bottomRight: Radius.circular(10),
                 topRight: Radius.circular(10))),
@@ -48,7 +48,7 @@ class {{filename.pascalCase()}}Drawer extends StatelessWidget {
               InkWell(
                 onTap: () {
                   Navigator.of(context, rootNavigator: true).pop();
-                  context.go(GGIRouteEnums.home.getRouteName());
+                 // context.go(GGIRouteEnums.home.getRouteName());
                 },
                 child: Row(
                   mainAxisSize: MainAxisSize.min,

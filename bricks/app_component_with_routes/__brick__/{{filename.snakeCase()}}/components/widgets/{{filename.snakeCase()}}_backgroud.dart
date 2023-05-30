@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:valorehber/helpers/singleton/base_singelton.dart';
 
 class {{filename.pascalCase()}}Background extends StatelessWidget {
   const {{filename.pascalCase()}}Background ({Key? key}) : super(key: key);
