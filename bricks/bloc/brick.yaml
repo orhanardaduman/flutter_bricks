@@ -1,4 +1,4 @@
-name: new_app
+name: bloc
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -24,10 +24,9 @@ environment:
 #  * an optional list of default values (array only)
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
-
 vars:
   filename:
     type: string
-    description: app name
-    default: App
-    prompt: app name?
+    description: bloc name
+    default: Dash
+    prompt: What is bloc name?

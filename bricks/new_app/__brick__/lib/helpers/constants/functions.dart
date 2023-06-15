@@ -66,19 +66,4 @@ class BaseFunctions with BaseSingleton {
           child: child,
         ),
       );
-  Color? checkCategoryColor(int? index) {
-    switch (index) {
-      case 0:
-        return colors.valo;
-      case 1:
-        return Colors.grey[850];
-      case 2:
-        return colors.valo;
-      case 3:
-        return colors.darkGreen;
-
-      default:
-        return Colors.white;
-    }
-  }
 }

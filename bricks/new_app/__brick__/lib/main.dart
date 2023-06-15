@@ -8,19 +8,19 @@ void main() {
   runApp(
     MultiBlocProvider(
       providers: BlocInjection().getBlocs(),
-      child: const ValoGuideApp(),
+      child: const {{filename.pascalCase()}}App(),
     ),
   );
 }
 
-class ValoGuideApp extends StatefulWidget {
+class {{filename.pascalCase()}}App extends StatefulWidget {
   const ValoGuideApp({Key? key}) : super(key: key);
 
   @override
-  State<ValoGuideApp> createState() => ValoGuideAppState();
+  State<ValoGuid{{filename.pascalCase()}}AppeApp> createState() => {{filename.pascalCase()}}AppState();
 }
 
-class ValoGuideAppState extends State<ValoGuideApp> with BaseSingleton {
+class {{filename.pascalCase()}}AppState extends State<{{filename.pascalCase()}}App> with BaseSingleton {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
