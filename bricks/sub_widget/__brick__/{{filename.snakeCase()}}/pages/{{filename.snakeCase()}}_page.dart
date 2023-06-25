@@ -26,7 +26,7 @@ class _{{filename.pascalCase()}}PageState extends State<{{filename.pascalCase()}
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      appBar: ESportsAppBar().customAppBar(context, ""),
+    //  appBar: ESportsAppBar().customAppBar(context, ""),
       body: BlocBuilder(
         bloc: bloc,
         builder: (context, state) {

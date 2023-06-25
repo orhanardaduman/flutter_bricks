@@ -20,6 +20,7 @@ class {{filename.pascalCase()}}Scaffold extends StatefulWidget {
 }
 
 class {{filename.pascalCase()}}ScaffoldState extends State<{{filename.pascalCase()}}Scaffold> {
+  /*
   final List<String> locationsFor{{filename.pascalCase()}} = [
    
   ];
@@ -32,7 +33,7 @@ class {{filename.pascalCase()}}ScaffoldState extends State<{{filename.pascalCase
 
     return selected >= 0 ? selected : 0;
   }
-
+*/
   @override
   Widget build(BuildContext context) {
     return WillPopScope(

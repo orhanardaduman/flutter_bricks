@@ -14,10 +14,10 @@ void main() {
 }
 
 class {{filename.pascalCase()}}App extends StatefulWidget {
-  const ValoGuideApp({Key? key}) : super(key: key);
+  const {{filename.pascalCase()}}App({Key? key}) : super(key: key);
 
   @override
-  State<ValoGuid{{filename.pascalCase()}}AppeApp> createState() => {{filename.pascalCase()}}AppState();
+  State<{{filename.pascalCase()}}App> createState() => {{filename.pascalCase()}}AppState();
 }
 
 class {{filename.pascalCase()}}AppState extends State<{{filename.pascalCase()}}App> with BaseSingleton {

@@ -5,7 +5,7 @@ import '../constants/color_constants.dart';
 import '../constants/functions.dart';
 import '../routes/routes.dart';
 
-abstract class BaseSingleton {
+abstract mixin class BaseSingleton {
   AppConstants get constants => AppConstants.instance;
   ColorConstants get colors => ColorConstants.instance;
   Routes get routes => Routes.instance;
