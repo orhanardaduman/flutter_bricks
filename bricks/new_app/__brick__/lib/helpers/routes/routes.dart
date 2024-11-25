@@ -29,7 +29,6 @@ class Routes {
             route: const SizedBox(),
           );
         },
-        routes: GGIRoutes.instance.routes,
       ),
     ],
   );

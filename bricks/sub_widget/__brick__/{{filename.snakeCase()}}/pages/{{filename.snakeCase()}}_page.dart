@@ -6,7 +6,7 @@ import '../bloc/{{filename.snakeCase()}}_bloc.dart';
 import '../bloc/{{filename.snakeCase()}}_events.dart';
 import '../bloc/{{filename.snakeCase()}}_states.dart';
 import '../../../../../helpers/singleton/base_singelton.dart';
-
+import '../../../../../helpers/widgets/error_view.dart';
 class {{filename.pascalCase()}}Page extends StatefulWidget {
   const {{filename.pascalCase()}}Page({Key? key}) : super(key: key);
 
@@ -25,8 +25,7 @@ class _{{filename.pascalCase()}}PageState extends State<{{filename.pascalCase()}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
-    //  appBar: ESportsAppBar().customAppBar(context, ""),
+      backgroundColor: Colors.black,
       body: BlocBuilder(
         bloc: bloc,
         builder: (context, state) {
@@ -37,21 +36,13 @@ class _{{filename.pascalCase()}}PageState extends State<{{filename.pascalCase()}
            
             );
           } else if (state is {{filename.pascalCase()}}Failed) {
-            return Column(
-              children: [
-                const Spacer(),
-                
-                const Spacer(),
-              ],
-            );
+             return ErrorView(
+                text: "",
+                onReTry: () {});
           } else {
-            return Column(
-              children: [
-                const Spacer(),
-                functions.platformIndicator(),
-                const Spacer(),
-              ],
-            );
+            return 
+                functions.platformIndicator();
+              
           }
         },
       ),

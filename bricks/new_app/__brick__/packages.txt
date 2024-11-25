@@ -1,8 +1,9 @@
-flutter pub add bloc
-flutter pub add flutter_bloc
-flutter pub add http
-flutter pub add html_unescape
-flutter pub add auto_size_text
-flutter pub add flutter_svg
-flutter pub add go_router
-
+fvm flutter pub add bloc
+fvm flutter pub add flutter_bloc
+fvm flutter pub add http
+fvm flutter pub add html_unescape
+fvm flutter pub add auto_size_text
+fvm flutter pub add flutter_svg
+fvm flutter pub add go_router
+fvm flutter pub add dio
+fvm flutter pub add flutter_screenutil

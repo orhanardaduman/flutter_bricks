@@ -10,14 +10,10 @@ import '../model/{{filename.snakeCase()}}_model.dart';
 
 class {{filename.pascalCase()}}Network with BaseSingleton {
   Future<{{filename.pascalCase()}}ListModel?> get{{filename.pascalCase()}}() async {
-    final uri = Uri.parse("matches".toApi);
-    final response = await http.get(uri);
-    var unescape = HtmlUnescape();
-    var converted = unescape.convert(response.body);
-    log(response.body);
+        final response = await customDio.dio.get("".toApi);
+
     if (response.statusCode == 200) {
-      var data = jsonDecode(converted);
-      return {{filename.pascalCase()}}ListModel.fromJson(data);
+      return {{filename.pascalCase()}}ListModel.fromJson(response.data);
     } else {
       return null;
     }
