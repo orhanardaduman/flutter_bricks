@@ -1,11 +1,7 @@
-import 'dart:convert';
-import 'dart:developer';
 
-import 'package:html_unescape/html_unescape.dart';
 import '../../../../../helpers/singleton/base_singelton.dart';
-import 'package:http/http.dart' as http;
+import '../../../../../helpers/extansions/string_extensions.dart';
 
-import '../../../../new_app/__brick__/lib/helpers/extansions/string_extensions.dart';
 import '../model/{{filename.snakeCase()}}_model.dart';
 
 class {{filename.pascalCase()}}Network with BaseSingleton {
