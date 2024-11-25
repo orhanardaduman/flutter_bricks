@@ -25,15 +25,14 @@ class {{filename.pascalCase()}}App extends StatefulWidget {
 class {{filename.pascalCase()}}AppState extends State<{{filename.pascalCase()}}App> with BaseSingleton {
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(390, 844),
+      return ScreenUtilInit(
+      designSize: const Size(360, 690),
       minTextAdapt: false,
       splitScreenMode: true,
-    
-     MaterialApp.router(
-      routerConfig: routes.routes,
-      title: constants.appName,
-    ),
+      builder: (context, child) => MaterialApp.router(
+        routerConfig: routes.routes,
+        title: constants.appName,
+      ),
     );
   }
 }

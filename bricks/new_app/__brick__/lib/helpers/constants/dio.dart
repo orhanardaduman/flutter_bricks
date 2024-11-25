@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../singleton/base_singelton.dart';
 
 class CustomDio with BaseSingleton {
   static CustomDio? _instance;
@@ -33,7 +34,7 @@ class CustomDio with BaseSingleton {
             final SharedPreferences prefs =
                 await SharedPreferences.getInstance();
             String token = prefs.getString("token") ?? "";
-            AuthNetwork().refreshToken(token);
+            //TODO: REFRESH TOKEN
           }
           return handler.next(error);
         },

@@ -7,3 +7,4 @@ fvm flutter pub add flutter_svg
 fvm flutter pub add go_router
 fvm flutter pub add dio
 fvm flutter pub add flutter_screenutil
+fvm flutter pub add shared_preferences
